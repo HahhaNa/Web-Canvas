@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    background-color: #ecdf88;
+    margin: auto;
+    cursor: none;
+    border-style: outset;
+}
+
+.btn{
+
+}
+
+/*color button*/
+.colorButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+.colorButton:hover {
+    border-color: rgba(0, 0, 0, 0.4);
+    border-style: solid;
+}
+
+/*.colorButton:active {*/
+/*    background-color: rgba(255, 211, 77, 0.68);*/
+/*}*/
+
+.colorButton:hover,
+.colorButton:active {
+    transform: scale(1.05);
+}
+
+input {
+    background-color: #ecdf88;
+    :active {background-color: beige}
+    border-style: none;
+}
+
+
+
+
+
