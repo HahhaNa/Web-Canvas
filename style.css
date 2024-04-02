@@ -5,17 +5,16 @@ body, html {
     overflow: hidden;
 }
 
-canvas {
+#canvas {
     display: block;
     background-color: #ecdf88;
-    margin: auto;
-    cursor: none;
     border-style: outset;
+    margin: 5vh auto auto;
 }
 
-.btn{
+/*.btn{*/
 
-}
+/*}*/
 
 /*color button*/
 .colorButton {
@@ -31,18 +30,13 @@ canvas {
     border-style: solid;
 }
 
-/*.colorButton:active {*/
-/*    background-color: rgba(255, 211, 77, 0.68);*/
-/*}*/
-
 .colorButton:hover,
 .colorButton:active {
     transform: scale(1.05);
 }
 
 input {
-    background-color: #ecdf88;
-    :active {background-color: beige}
+    background: transparent;
     border-style: none;
 }
 
