@@ -1,0 +1,107 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.controls-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#canvas-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas {
+    background-color: #ecdf88;
+    border-style: inset;
+    z-index: 0;
+}
+
+.btn-group {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-group button {
+    border-radius: 5px;
+    margin: 5px 5px;
+    padding: 5px 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    min-width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.colorButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+
+.colorButton:hover {
+    border-color: rgba(0, 0, 0, 0.4);
+    border-style: solid;
+}
+
+.colorButton:hover,
+.colorButton:active {
+    transform: scale(1.05);
+}
+
+input {
+    background: transparent;
+    color: black;
+    border-style: none;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@media (min-width: 1250px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .controls-container {
+        flex-direction: column;
+        max-width: 25%; /* Limit width to 25% */
+        padding: 20px;
+    }
+
+    .controls-container > * {
+        margin-bottom: 10px; /* Add spacing between elements in vertical layout */
+    }
+
+    #canvas-container {
+        flex: none;
+        width: 70%; /* Set width for canvas container on large screens */
+    }
+}
